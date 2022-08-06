@@ -10,7 +10,7 @@ const Subsciber = () => {
     }, []);
  
     const getProducts = async () => {
-        const response = await axios.get('http://localhost:9010/subsciber');
+        const response = await axios.get('http://108.137.89.216:8010/subsciber');
         setProduct(response.data);
     }
  
