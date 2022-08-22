@@ -15,9 +15,9 @@ function App() {
           <BrowserRouter>
             <Routes>
               <Route path="/" element={<Subsciber />} />
-              <Route path="/queue1" element={<Queue1 />} />
+              {/* <Route path="/queue1" element={<Queue1 />} />
               <Route path="/queue2" element={<Queue2 />} />
-              <Route path="/queue3" element={<Queue3 />} />
+              <Route path="/queue3" element={<Queue3 />} /> */}
             </Routes>
           </BrowserRouter>
         </div>
