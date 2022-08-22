@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import { BrowserRouter as Router,Routes, Route, Link } from 'react-router-dom';
+
 
 class Header extends React.Component{
     render(){
@@ -7,9 +9,22 @@ class Header extends React.Component{
                 <nav class="navbar navbar-expand-lg bg-light">
                     <div class="container-fluid">
                         <a class="navbar-brand" href="#">Subsciber</a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                        </button>
+                    </div>
+                    <div class="d-flex" role="search">
+                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <Link to="/" className="btn btn-outline-success" aria-current="page">tdw_channel</Link>
+                        </li>
+                        <li class="nav-item">
+                            <Link to="/queue1" className="btn btn-outline-success" aria-current="page">Queue1</Link>
+                        </li>
+                        <li class="nav-item">
+                            <Link to="/queue2" className="btn btn-outline-success" aria-current="page">Queue2</Link>
+                        </li>
+                        <li class="nav-item">
+                            <Link to="/queue3" className="btn btn-outline-success" aria-current="page">Queue3</Link>
+                        </li>
+                     </ul>
                     </div>
                 </nav>
             </div>
